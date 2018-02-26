@@ -2806,7 +2806,7 @@ bool InitBlockIndex() {
         printf("%s\n", hash.ToString().c_str());
         printf("%s\n", hashGenesisBlock.ToString().c_str());
         printf("%s\n", block.hashMerkleRoot.ToString().c_str());
-        assert(block.hashMerkleRoot == uint256("0x"));
+        assert(block.hashMerkleRoot == uint256("0x840d465f4df2ce2f15ad14175004ac162b0e19498316eebcd6593b477e19f230"));
         if (true && block.GetHash() != hashGenesisBlock)
                 {
                     printf("Searching for genesis block...\n");
